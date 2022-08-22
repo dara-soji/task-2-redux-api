@@ -23,7 +23,6 @@ function App() {
       .catch((err) => {
         console.log("Err: ", err);
       });
-      console.log(response)
     dispatch(setNationalStat(response.data.data));
   };
 
@@ -43,7 +42,7 @@ function App() {
       <NationalStat />
     </>
 
-    <div class="ui horizontal divider">
+    <div className="ui horizontal divider">
     Statistics by state
   </div>
 

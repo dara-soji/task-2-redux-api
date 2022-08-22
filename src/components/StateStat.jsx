@@ -21,7 +21,7 @@ const StateStat = () => {
       });
     
   return (
-    <table class="ui celled table">
+    <table className="ui celled table">
     <thead>
         <tr>
             <th>State</th>
