@@ -1,51 +1,51 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 
 const NationalStat = () => {
   const stats = useSelector((state) => state.nationCovidStat.stat);
 
-  const {death, discharged, totalActiveCases, totalConfirmedCases, totalSamplesTested } = stats
-
+      const {death, discharged, totalActiveCases, totalConfirmedCases, totalSamplesTested } = stats
   
+
   return (
-    <div class="ui statistics">
-        <div class="statistic">
-          <div class="value">
+    <div className="ui statistics">
+        <div className="statistic">
+          <div className="value">
             {totalSamplesTested}
           </div>
-          <div class="label">
+          <div className="label">
             Total Samples Tested
           </div>
         </div>
-        <div class="statistic">
-          <div class="value">
+        <div className="statistic">
+          <div className="value">
           {totalConfirmedCases}
           </div>
-          <div class="label">
+          <div className="label">
           Total Confirmed Cases
           </div>
         </div>
-        <div class="statistic">
-          <div class="value">
+        <div className="statistic">
+          <div className="value">
            {totalActiveCases}
           </div>
-          <div class="label">
+          <div className="label">
           Total Active Cases
           </div>
         </div>
-        <div class="statistic">
-          <div class="value">
+        <div className="statistic">
+          <div className="value">
             {discharged}
           </div>
-          <div class="label">
+          <div className="label">
           Discharged
           </div>
         </div>
-        <div class="statistic">
-          <div class="value">
+        <div className="statistic">
+          <div className="value">
             {death}
           </div>
-          <div class="label">
+          <div className="label">
           Death
           </div>
         </div>
